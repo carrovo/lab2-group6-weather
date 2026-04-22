@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_CRICKET
+    schema: raw
+    description: "Raw schema from Lab1 ETL"
+    tables:
+      - name: city_weather
+        identifier: city_weather
+        description: "Historical weather data loaded by Airflow from Open-Meteo"
+      - name: city_weather_forecast
+        identifier: city_weather_forecast
+        description: "Forecast output table from Snowflake ML"
+      - name: city_weather_final
+        identifier: city_weather_final
+        description: "Combined historical + forecast weather table"

@@ -1,0 +1,13 @@
+weather_lab2:
+  outputs:
+    dev:
+      type: snowflake
+      account: sfedu02-eab27764
+      user: CRICKET
+      password: "YOUR_PASSWORD"
+      role: TRAINING_ROLE
+      database: USER_DB_CRICKET
+      warehouse: CRICKET_QUERY_WH
+      schema: analytics
+      threads: 1
+  target: dev
