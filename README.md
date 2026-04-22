@@ -10,19 +10,22 @@ This project implements an ELT pipeline using dbt and Apache Airflow. The pipeli
 - **Data Warehouse**: Snowflake
 
 ## Project Structure
+
+```
 Airflow/
-│── dags/ # Airflow DAGs
-│── dbt/ # dbt project
-│ ├── analyses/
-│ ├── macros/
-│ ├── models/
-│ ├── seeds/
-│ ├── snapshots/
-│ ├── tests/
-│ ├── dbt_project.yml
-│ └── profiles.yml
+│── dags/                  # Airflow DAGs
+│── dbt/                   # dbt project
+│   ├── analyses/
+│   ├── macros/
+│   ├── models/
+│   ├── seeds/
+│   ├── snapshots/
+│   ├── tests/
+│   ├── dbt_project.yml
+│   └── profiles.yml
 │── docker-compose.yaml
 │── README.md
+```
 
 
 ## dbt Workflow
@@ -57,4 +60,5 @@ The pipeline is orchestrated using Airflow:
 
 ## Notes
 Replace credentials in profiles.yml before running
+
 dbt commands are executed inside the Airflow container
